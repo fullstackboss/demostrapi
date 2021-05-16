@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "areas",
+  "info": {
+    "name": "area",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_area": {
+      "type": "string"
+    },
+    "personals": {
+      "via": "area",
+      "collection": "personal"
+    }
+  }
+}

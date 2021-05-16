@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personals",
+  "info": {
+    "name": "Personal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "area": {
+      "via": "personals",
+      "model": "area"
+    },
+    "cargo": {
+      "model": "cargo",
+      "via": "personal"
+    }
+  }
+}
